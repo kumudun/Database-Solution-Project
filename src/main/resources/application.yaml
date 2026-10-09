@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: projectdb
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/project-db
+    username: shop_user
+    password: User123!
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+server:
+  port: 8081
